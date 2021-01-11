@@ -1,0 +1,61 @@
+@media only screen and (max-width: 300px) {
+    body {
+        background-color: red;
+    }
+    div#medium {
+        display: none;
+    }
+    div#large {
+        display: none;
+    }
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    body {
+        background-color: green;
+    }
+    div#small {
+        display: none;
+    }
+    div#large {
+        display: none;
+    }
+    p {
+         font-family: 'Open Sans', sans-serif;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    div#small {
+        display: none;
+    }
+    div#medium {
+        display: none;
+    }
+    p {
+        font-family:garamond,serif;
+    }
+}
+div#small {
+    background: white;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+div#medium {
+    background: red;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+div#large {
+    background: purple;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}

@@ -1,64 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*Small screen content first*/
 @media only screen and (max-width: 300px) {
     body {
         background-color: red;
     }
+
+    div#small {
+        background: white;
+    }
+
     div#medium {
-        display: flex;
+        background: red;
     }
+
     div#large {
-        display: flex;
+        background: purple;
     }
+
     p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: small;
+        padding: 2px;
     }
 }
+
+/*medium screen content second*/
 @media only screen and (min-width: 300px) and (max-width: 768px) {
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
     body {
         background-color: green;
     }
+
     div#small {
-        display: flex;
+        background: white;
+        width: 33.33%;
+        float: left;
     }
+
+    div#medium {
+        background: red;
+        width: 66.67%;
+        float: left;
+    }
+
     div#large {
-        display: flex;
+        background: purple;
+        width: 100%;
+        float: left;
     }
+
     p {
-         font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: medium;
+        padding: 2px;
     }
+
 }
+
+/*large screen content last*/
 @media only screen and (min-width: 768px) {
     body {
         background-color: blue;
     }
+
     div#small {
-        display: flex;
+        background: white;
+        float: left;
+        width: 33%;
     }
+
     div#medium {
-        display: flex;
+        background: red;
+        float: left;
+        width: 33%;
     }
+
+    div#large {
+        background: purple;
+        float: left;
+        width: 33%;
+    }
+
     p {
-        font-family:garamond,serif;
+        font-family: garamond, serif;
         font-size: larger;
+        padding: 2px;
     }
-}
-div#small {
-    background: white;
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-div#medium {
-    background: red;
-    position: absolute;
-    left: 150px;
-    top: 150px;
-}
-div#large {
-    background: purple;
-    position: absolute;
-    left: 200px;
-    top: 200px;
 }

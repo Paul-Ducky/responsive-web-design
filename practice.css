@@ -3,13 +3,14 @@
         background-color: red;
     }
     div#medium {
-        display: none;
+        display: flex;
     }
     div#large {
-        display: none;
+        display: flex;
     }
     p {
         font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -18,13 +19,14 @@
         background-color: green;
     }
     div#small {
-        display: none;
+        display: flex;
     }
     div#large {
-        display: none;
+        display: flex;
     }
     p {
          font-family: 'Open Sans', sans-serif;
+        font-size: medium;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -32,13 +34,14 @@
         background-color: blue;
     }
     div#small {
-        display: none;
+        display: flex;
     }
     div#medium {
-        display: none;
+        display: flex;
     }
     p {
         font-family:garamond,serif;
+        font-size: larger;
     }
 }
 div#small {
